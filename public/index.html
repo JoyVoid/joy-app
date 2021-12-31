@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<script type="text/javascript" src="src.App.js"></script>
+<head>
+
+   
+//Drop Down Choice Instructions
+<label for="choose">Choose sore or tight areas of your body:</label>
+//Drop Down List
+<select name="choose" id="choose" onchange="ddlChange(value)" onchange="resizeOnChange()">
+  <option value="spine">spine</option>
+  <option value="shoulders">shoulders</option>
+  <option value="hips">hips</option>
+  <option value="arms">arms</option>
+  <option value="legs">legs</option>
+</select>
+//Output div to add paragraphs to
+<input type="text" name="choices" id="textOutput"/>
+  
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -39,5 +55,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
   </body>
 </html>
